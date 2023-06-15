@@ -4,7 +4,7 @@ module "s3-bucket" {
   bucket_prefix="manu-test"
 }
   
-check "1==1" {
+check "a" {
   assert{
     condition = 1==1
     error_message ="Error?"
@@ -12,7 +12,7 @@ check "1==1" {
 
 }
 
-  check "1==2" {
+  check "b" {
 
     assert{
     condition = 1==2

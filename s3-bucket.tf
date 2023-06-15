@@ -5,16 +5,16 @@ module "s3-bucket" {
 }
   
 check "a" {
-  assert{
+  assert {
     condition = 1==1
     error_message ="Error?"
   }
 
 }
 
-  check "b" {
+check "b" {
 
-    assert{
+    assert {
     condition = 1==2
     error_message ="Error?"
   }

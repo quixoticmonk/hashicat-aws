@@ -6,16 +6,8 @@ module "s3-bucket" {
   
 check "a" {
   assert {
-    condition = 1==1
+    condition = module.s3-bucket.bucket_prefix=="manu-test"
     error_message ="Error?"
   }
 
-}
-
-check "b" {
-
-    assert {
-    condition = 1==2
-    error_message ="Error?"
-  }
 }

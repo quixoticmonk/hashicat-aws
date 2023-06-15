@@ -3,3 +3,14 @@ module "s3-bucket" {
   version = "2.8.0"
   bucket_prefix="manu-test"
 }
+  
+check {
+  assert{
+    condition = 1==1
+    error_message ="Error?"
+  }
+    assert{
+    condition = 1==2
+    error_message ="Error?"
+  }
+}
